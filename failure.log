@@ -1,4 +1,4 @@
-(node:9582) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+(node:12900) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
 (Use `node --trace-warnings ...` to show where the warning was created)
 file:///private/tmp/run-watch-repro-lm6WRQ/node_modules/run/dist/runtime/protocol-validation.js:3
 const invalidMessage = (kind) => new RunProtocolError(`Invalid ${kind} worker protocol message.`);
@@ -20,3 +20,4 @@ RunProtocolError: Invalid worker-to-main worker protocol message.
 }
 
 Node.js v24.22.0
+Failed running 'repro.mjs'. Waiting for file changes before restarting...

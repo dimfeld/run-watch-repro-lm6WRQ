@@ -27,9 +27,7 @@ Expected output and observed output:
 npm run repro
 ```
 
-This sets `WATCH_REPORT_DEPENDENCIES=1`, which Node uses for dependency reporting
-in watch mode. It reproduces the failure without starting a file watcher.
-The command exits with code 1:
+This starts `node --watch repro.mjs`. The child process fails with:
 
 ```text
 RunProtocolError: Invalid worker-to-main worker protocol message.
@@ -37,13 +35,8 @@ RunProtocolError: Invalid worker-to-main worker protocol message.
 
 See `failure.log` for the captured stack trace.
 
-To start the actual Node watcher instead:
-
-```sh
-npm run watch
-```
-
-Use Ctrl+C to stop the watcher.
+The watcher stays active after the child process fails. Use Ctrl+C to stop it.
+`npm run watch` is an alias for the same command.
 
 ## Cause
 

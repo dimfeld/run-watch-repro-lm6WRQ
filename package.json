@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "start": "node repro.mjs",
-    "repro": "WATCH_REPORT_DEPENDENCIES=1 node repro.mjs",
+    "repro": "node --watch repro.mjs",
     "watch": "node --watch repro.mjs"
   },
   "dependencies": {
