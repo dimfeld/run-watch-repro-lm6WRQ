@@ -1,0 +1,13 @@
+{
+  "name": "run-watch-protocol-repro",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node repro.mjs",
+    "repro": "WATCH_REPORT_DEPENDENCIES=1 node repro.mjs",
+    "watch": "node --watch repro.mjs"
+  },
+  "dependencies": {
+    "run": "2.1.10"
+  }
+}
